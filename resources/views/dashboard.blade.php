@@ -2,14 +2,10 @@
 
 @section('content')
 <div class="container">
-    @foreach ($services as $service)
+    @foreach ($services as $data)
 
-        @if(view()->exists('utils.card'))
             @include('utils.card')
-        @else
-            {{$service->name }}
-            {{$service->desc }}
-        @endif
+
     @endforeach
 
 

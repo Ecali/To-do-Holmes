@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/home', 'Dashboard\Home')->name('home');
 Route::get('/protetta', 'HomeController@index')->name('protetta');
+Route::get('/task', 'Task\Home')->name('task');
