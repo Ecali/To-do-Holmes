@@ -2,18 +2,19 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+    @foreach ($services as $service)
 
-                <div class="card-body">
+        @if(view()->exists('utils.card'))
+            @include('utils.card')
+        @else
+            {{$service->name }}
+            {{$service->desc }}
+        @endif
+    @endforeach
 
-                    Sono la dashboard
 
-                </div>
-            </div>
-        </div>
-    </div>
+    @section('container')
+
+    @endsection
 </div>
 @endsection
