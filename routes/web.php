@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
+Route::get('/laravel', function () {
     return view('welcome');
 });
+Route::get('/', 'View\LandingPage');
 
 Auth::routes();
 

@@ -12,6 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/home', 'Dashboard\Home')->name('home');
 Route::get('/protetta', 'HomeController@index')->name('protetta');
