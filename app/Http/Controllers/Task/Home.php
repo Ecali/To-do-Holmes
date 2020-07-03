@@ -13,7 +13,7 @@ class Home extends Controller
         return view('taskHome', ['tasks' => $this->getTasks(0)], ['completeTask' => $this->getTasks(1)]);
     }
     private function getTasks($x){
-        $tasks = DB::table('tasks')->where('do', '=', $x)->get();
+        $tasks = DB::table('tasks')->where('do', '=', $x)->where('deleted_at', '!=', 'null')->get();
         return $tasks;
     }
 }
