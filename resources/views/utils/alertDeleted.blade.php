@@ -6,7 +6,3 @@
         <p class="text-muted" style="float: right">Delete at: {{$data->deleted_at}}</p>
     </div>
 </div>
-
-
-
-
