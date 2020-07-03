@@ -14,7 +14,6 @@
             {{Session::get("message")}}
             <button class="btn" onclick="hideMessage()" type="submit" style="float: right; padding-top: 0"><span class="material-icons">close</span></button>
 
-            prova per un testo
         </div>
         <hr>
     </div>
