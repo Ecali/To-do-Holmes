@@ -37,7 +37,13 @@
         @include('utils.alert')
     @endforeach
 </div>
+
+    <div class="container">
+        @include('utils.deleted')
+    </div>
 @endsection
+
+
 
 <script stype="textjavascript">
     function hideMessage() {
