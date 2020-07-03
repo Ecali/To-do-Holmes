@@ -10,10 +10,10 @@ class Home extends Controller
 {
     public function __invoke()
     {
-        return view('taskHome', ['tasks' => $this->getTasks()]);
+        return view('taskHome', ['tasks' => $this->getTasks(0)], ['completeTask' => $this->getTasks(1)]);
     }
-    private function getTasks(){
-        $tasks = DB::table('tasks')->where('do', '=', 0)->get();
+    private function getTasks($x){
+        $tasks = DB::table('tasks')->where('do', '=', $x)->get();
         return $tasks;
     }
 }
