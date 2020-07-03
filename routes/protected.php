@@ -20,5 +20,7 @@ Route::post('/task/update', 'Task\update')->name('taskUpdate');
 Route::post('/task/add', 'Task\add')->name('taskAdd');
 Route::post('/task/delete', 'Task\delete')->name('taskDelete');
 
+Route::get('Sherlock', 'GS\Home')->name('gs-Sherlock');
+
 
 
