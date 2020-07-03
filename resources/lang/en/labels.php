@@ -17,4 +17,7 @@ return [
     'descApp' => 'Best admin console with backend and frontend, for everything constantly updated.',
     'devBy' => 'Ecali',
     'copyright' => 'All Rights Reserved. © ',
+    'tasksTitle' => 'Tasks View List',
+    'noTaskToDO' => 'Complimenti non hai più task da completare',
+    'addTask' => 'Aggiungi un nuovo task per vederlo in questa sezione',
 ];
