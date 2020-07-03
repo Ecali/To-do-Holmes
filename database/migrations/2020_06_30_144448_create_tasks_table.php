@@ -20,6 +20,7 @@ class CreateTasksTable extends Migration
             $table->boolean('do');
             $table->timestamps();
         });
+
     }
 
     /**
