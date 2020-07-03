@@ -20,4 +20,5 @@ return [
     'tasksTitle' => 'Tasks View List',
     'noTaskToDO' => 'Complimenti non hai più task da completare',
     'addTask' => 'Aggiungi un nuovo task per vederlo in questa sezione',
+    'sherlockTitle' => 'GS - Sherlock',
 ];
